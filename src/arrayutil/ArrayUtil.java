@@ -21,11 +21,11 @@ public class ArrayUtil {
         }int[] array3={8,13,24,31,47,52,67,78,84,98};
         for (int i = 0; i < 1; i++) {
             System.out.println(array3[0]);
-        }int[] array4={8,13,24,31,47,52,67,78,84,98};
-        int result=0;
+        }double[] array4={8,13,24,31,47,52,67,78,84,98};
+        double result=0;
         for (int i = 0; i <10 ; i++) {
-         result= result +array4[i];
-         System.out.println("միջին արժեքը = է"+result/10);
+            result=result+array3[i];
+         System.out.println("Միջինը =է result/10");
 
 
         }int[] array5= {8,13,24,31,47,52,67,78,84,98};
