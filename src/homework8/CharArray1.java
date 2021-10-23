@@ -10,15 +10,25 @@ public class CharArray1 {
             System.out.println(bolola.length - 1 == 'l' == true);
 
         }
-        char[] bolola1 = {'b', 'a', 'b', 'o', 'l'};
-        for (int i = 0; i < bolola1.length -2; i++) {
-            if (bolola1[i] == i +2== true) {
-
+        char[] babola1 = {'b', 'a', 'b', 'o', 'l','a'};
+        boolean bob=false;
+          for (int i = 0; i < babola1.length - 2; i++) {
+            if (babola1[i] =='b'&& babola1[i+2]=='b') {
+                bob=true;
 
             }
-            System.out.println(bolola1[i]==i+2==true);
+            System.out.println(bob);
 
 
         }
-    }
-}
+
+
+                    }
+
+
+
+                }
+
+
+
+

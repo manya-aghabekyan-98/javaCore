@@ -8,6 +8,7 @@ public class ArrayExample {
         for (int i = 0; i <array.length ; i++) {
             if (array[i]==n){
                 index=i;
+                break;
 
             }System.out.println(index);
 
