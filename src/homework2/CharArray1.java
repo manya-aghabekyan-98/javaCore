@@ -1,4 +1,4 @@
-package homework8;
+package homework2;
 
 public class CharArray1 {
     public static void main(String[] args) {

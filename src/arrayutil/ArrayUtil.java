@@ -20,8 +20,8 @@ public class ArrayUtil {
         }
         int min = array[0];
         for (int i = 0; i < array.length; i++) {
-            if (array[0] > min) {
-                min = array[0];
+            if (array[i] < min) {
+                min = array[i];
             }
             System.out.println("min=" + min);
 
@@ -44,7 +44,19 @@ public class ArrayUtil {
                         evenCount++;
                     }
                     System.out.println("count of even:"+ evenCount);
-                }
+                }int oddCount=0;
+                for (int k = 0; k < array.length; k++) {
+                    if (array[i]% 2 !=0){
+                        oddCount++;
+                    }System.out.println("count of odd"+ oddCount);
+
+                }int sum=0;
+                for (int k = 0; k < array.length; k++) {
+                    sum+= array.length;
+
+                }System.out.println("sum"+sum);
+                System.out.println("avg"+sum/array.length);
+
 
 
             }
