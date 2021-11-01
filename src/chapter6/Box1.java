@@ -7,5 +7,5 @@ public class Box1 {
 
     double volume(){
         return width *height * depth;
-    }
-}
+
+}}
