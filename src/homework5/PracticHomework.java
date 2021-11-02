@@ -1,4 +1,4 @@
-package homwork5;
+package homework5;
 
 public class PracticHomework {
     int nextNumber(int number) {
