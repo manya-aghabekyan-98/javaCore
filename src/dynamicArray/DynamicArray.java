@@ -19,10 +19,10 @@ public class DynamicArray {
     }
 
     private void extend() {
-        int oldArray[]= {3,10,15,19,23,43,56,65,87} ;
-        int [] newArray= new int [oldArray.length+10];
+        int Array[]= {3,10,15,19,23,43,56,65,87} ;
+        int [] newArray= new int [Array.length+10];
         for (int i = 0; i < array.length; i++) {
-            oldArray[i]=newArray[i];
+            Array[i]=newArray[i];
 
             }
         }
