@@ -1,23 +1,23 @@
 package classwork.bracechecker;
 
 public class Stack {
-    int stack[]=new int[10];
-    int size;
-    Stack(){
-        size=-1;
+     char stack[]=new char[10];
+    public int size;
+   public Stack(){
+        size=0;
 
 
-    }void push(int item){
+    }public void push(char item){
         if(size==9)
             System.out.println("Стек заполнен");
         else
-            stack[++size]=item;
+            stack[size++]=item;
 
-    }int pop(){
-        if (size<0){
+    }public char pop(){
+        if (size<1){
             System.out.println("Стек  не загржен");
             return 0;
         }else
-            return stack[size--];
+            return stack[--size];
 }
 }
