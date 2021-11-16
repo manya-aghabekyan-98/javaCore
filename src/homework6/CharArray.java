@@ -35,9 +35,26 @@ public class CharArray {
             System.out.println(isBob);
 
 
-        }char[] test={' ',' ','h','e','l','l','o',' ',' '};
+        }
+        char[] text = {' ', ' ', 'h', 'e', 'l', 'l', 'o', ' ', ' '};
+        int startIndex = 0;
+        int endIndex = text.length - 1;
+        while (startIndex < endIndex && text[startIndex] == ' ') {
+            startIndex++;
+        }
+        while (startIndex < endIndex && text[endIndex] == ' ') {
+            endIndex--;
 
+            }char[] result=new  char [(endIndex-startIndex)+1];
+        int index=0;
+        for (int i = startIndex; i <= endIndex; i++) {
+            result[index++]=text[i];
 
+        }
+        for (int i = 0; i < result.length; i++) {
+            System.out.println(result[i]);
+
+        }
     }
 }
 
