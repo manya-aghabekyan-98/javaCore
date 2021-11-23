@@ -1,6 +1,6 @@
 package chapter7;
 
-public class Box {
+public class Box{
     double width;
     double height;
     double depth;
@@ -10,7 +10,7 @@ public class Box {
         height=h;
         depth=d;
 
-                } Box() {
+    } Box() {
                     width=-1;
                     height=-1;
                     depth=-1;

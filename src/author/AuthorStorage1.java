@@ -2,7 +2,7 @@ package author;
 
 public class AuthorStorage1 {
     private Author[] authors = new Author[10];
-    private int size = 0;
+    private int size;
 
     public void add(Author author) {
         if (authors.length == size) {
@@ -29,18 +29,18 @@ public class AuthorStorage1 {
 
     public void searchByName(String keyword) {
         for (int i = 0; i < size; i++) {
-            if (authors[i].getName().contains(keyword)) {
+            if (authors[i].getName().contains(keyword) || authors[i].getSurname().contains(keyword)) {
+
                 System.out.println(authors[i]);
             }
         }
 
-        }
-    public static void searchByAge(int minAge, int maxAge){
-        for (int i = 0; i < size; i++) {
-            if (authors[i].getAge()>minAge && authors[i].getAge()<maxAge){
-                System.out.println(authors[i]);
-            }
+//        public static void searchByAge ( int minAge, int maxAge){
+//            for (int i = 0; i < size; i++) {
+//                if (authors[i].getAge() >= minAge && authors[i].getAge() <= maxAge) {
+//                    System.out.println(authors[i]);
+                }
 
-        }
+
     }
-}
+

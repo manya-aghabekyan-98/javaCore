@@ -1,23 +1,22 @@
-package author;
+package author1;
 
 public class Author {
     private String name;
     private String surname;
+    private int age;
     private String email;
     private String gender;
-    private int age;
 
-    private Author(String name, String surname, String email, String gender,int age) {
+    public Author(String name, String surname, int age, String email, String gender) {
         this.name = name;
         this.surname = surname;
+        this.age = age;
         this.email = email;
         this.gender = gender;
-        this.age = age;
     }
 
-
-
-
+    public Author() {
+    }
 
     public String getName() {
         return name;
@@ -33,6 +32,14 @@ public class Author {
 
     public void setSurname(String surname) {
         this.surname = surname;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
     }
 
     public String getEmail() {
@@ -51,30 +58,15 @@ public class Author {
         this.gender = gender;
     }
 
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-
     @Override
     public String toString() {
         return "Author{" +
                 "name='" + name + '\'' +
                 ", surname='" + surname + '\'' +
+                ", age=" + age +
                 ", email='" + email + '\'' +
                 ", gender='" + gender + '\'' +
-                ", age=" + age +
                 '}';
     }
 }
-
-
-
-
-
-
-
 

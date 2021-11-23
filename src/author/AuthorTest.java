@@ -22,8 +22,7 @@ public class AuthorTest {
             System.out.println(" please input count of author՞s age");
             int age = Integer.parseInt(scanner.nextLine());
 
-            Author author = new Author(name, surname, email, gender, age);
-           authorStorage.add(author);
+
 
 
         }
