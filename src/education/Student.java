@@ -1,29 +1,24 @@
-package author1;
+package education;
 
-public class Author {
+public class Student {
     private String name;
     private String surname;
     private int age;
     private String email;
-    private String gender;
+    private  String phone;
+    private String lesson;
 
-    public Author(String name, String surname, int age, String email, String gender) {
 
-        this.name = name;
-        this.surname = surname;
-        this.age = age;
-        this.email = email;
-        this.gender = gender;
+    public  Student(String name, String surname, int age, String email, String phone, String lesson){
+        this.name=name;
+        this.surname=surname;
+        this.age=age;
+        this.email=email;
+        this.phone=phone;
+        this.lesson=lesson;
+    } public Student(){
 
     }
-
-    public Author() {
-    }
-
-
-
-
-
 
     public String getName() {
         return name;
@@ -57,26 +52,31 @@ public class Author {
         this.email = email;
     }
 
-    public String getGender() {
-        return gender;
+    public String getPhone() {
+        return phone;
     }
 
-    public void setGender(String gender) {
-        this.gender = gender;
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public String getLesson() {
+        return lesson;
+    }
+
+    public void setLesson(String lesson) {
+        this.lesson = lesson;
     }
 
     @Override
     public String toString() {
-        return "Author{" +
-
-                ", name='" + name + '\'' +
+        return "Student{" +
+                "name='" + name + '\'' +
                 ", surname='" + surname + '\'' +
                 ", age=" + age +
                 ", email='" + email + '\'' +
-                ", gender='" + gender + '\'' +
+                ", phone='" + phone + '\'' +
+                ", lesson='" + lesson+ '\'' +
                 '}';
     }
 }
-
-
-

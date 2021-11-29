@@ -1,8 +1,8 @@
 package author1;
 
 public class AuthorStorage {
-    private Author[] authors = new Author[16];
-    private int size;
+    public Author[] authors = new Author[16];
+    public int size;
 
     public void add(Author author) {
         if (authors.length == size) {
@@ -51,5 +51,36 @@ public class AuthorStorage {
     }
 
 
+    public void deleteByAuthor(String email) {
+        for (int i = 0; i < size; i++) {
+            if (authors[i].getEmail().equals(email)) {
+                size--;
+            }
+        }
+    }
 
-}
+    public void delete(Author author) {
+        for (int i = 0; i < size; i++) {
+            if (authors[i].equals(author)) {
+                deleteByIndex(i);
+            }
+            break;
+
+        }
+    }
+
+
+
+    private void deleteByIndex(int index) {
+            for (int i = index+1; i <size ; i++) {
+                authors[i-1]=authors[i];
+                    size--;
+                }
+
+            }
+
+        }
+
+
+
+
