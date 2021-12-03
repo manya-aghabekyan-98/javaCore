@@ -1,4 +1,4 @@
-package author1;
+package author1.model;
 
 import java.util.Objects;
 

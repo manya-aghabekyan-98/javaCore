@@ -1,5 +1,7 @@
 package author;
 
+import java.util.Objects;
+
 public class Author {
     private String name;
     private String surname;
@@ -7,16 +9,13 @@ public class Author {
     private String gender;
     private int age;
 
-    private Author(String name, String surname, String email, String gender,int age) {
+    private Author(String name, String surname, String email, String gender, int age) {
         this.name = name;
         this.surname = surname;
         this.email = email;
         this.gender = gender;
         this.age = age;
     }
-
-
-
 
 
     public String getName() {
@@ -59,6 +58,20 @@ public class Author {
         this.age = age;
     }
 
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Author author = (Author) o;
+        return age == author.age && Objects.equals(name, author.name) && Objects.equals(surname, author.surname) && Objects.equals(email, author.email) && Objects.equals(gender, author.gender);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, surname, email, gender, age);
+    }
+
     @Override
     public String toString() {
         return "Author{" +
@@ -70,6 +83,7 @@ public class Author {
                 '}';
     }
 }
+
 
 
 

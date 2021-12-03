@@ -1,4 +1,6 @@
-package education;
+package education.storage;
+
+import education.model.Lesson;
 
 public class LessonStorage {
     public Lesson[] lessons = new Lesson[10];

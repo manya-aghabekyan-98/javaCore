@@ -1,4 +1,7 @@
-package author1;
+package author1.model;
+
+import java.util.Date;
+import java.util.Objects;
 
 public class Author {
     private String name;
@@ -6,24 +9,33 @@ public class Author {
     private int age;
     private String email;
     private String gender;
+    private Date dateofBirth;
 
-    public Author(String name, String surname, int age, String email, String gender) {
-
+    public Author(String name, String surname, int age, String email, String gender, Date dateofBirth) {
         this.name = name;
         this.surname = surname;
         this.age = age;
         this.email = email;
         this.gender = gender;
-
+        this.dateofBirth = dateofBirth;
     }
+
+
 
     public Author() {
     }
 
+    public Author(String authorDatum, String authorDatum1, String authorDatum2, String authorDatum3, int age, String authorDatum4) {
+    }
 
 
+    public Date getDateofBirth() {
+        return dateofBirth;
+    }
 
-
+    public void setDateofBirth(Date dateofBirth) {
+        this.dateofBirth = dateofBirth;
+    }
 
     public String getName() {
         return name;
@@ -66,17 +78,31 @@ public class Author {
     }
 
     @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Author author = (Author) o;
+        return age == author.age && Objects.equals(name, author.name) && Objects.equals(surname, author.surname) && Objects.equals(email, author.email) && Objects.equals(gender, author.gender) && Objects.equals(dateofBirth, author.dateofBirth);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, surname, age, email, gender, dateofBirth);
+    }
+
+    @Override
     public String toString() {
         return "Author{" +
-
-                ", name='" + name + '\'' +
+                "name='" + name + '\'' +
                 ", surname='" + surname + '\'' +
                 ", age=" + age +
                 ", email='" + email + '\'' +
                 ", gender='" + gender + '\'' +
+                ", dateofBirth=" + dateofBirth +
                 '}';
     }
 }
+
 
 
 

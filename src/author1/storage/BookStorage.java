@@ -1,4 +1,7 @@
-package author1;
+package author1.storage;
+
+import author1.model.Author;
+import author1.model.Book;
 
 public class BookStorage {
     private Book[] books = new Book[10];

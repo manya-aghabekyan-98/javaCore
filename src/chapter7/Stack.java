@@ -1,22 +1,28 @@
 package chapter7;
 
 public class Stack {
-    int stack[]=new int[10];
+    int[] stack = new int[10];
     int tos;
-    Stack(){
-        tos=-1;
+
+    Stack() {
+        tos = -1;
 
 
-    }void push(int item){
-        if(tos==9)
+    }
+
+    void push(int item) {
+        if (tos == 9)
             System.out.println("Стек заполнен");
         else
-            stack[++tos]=item;
+            stack[++tos] = item;
 
-    }int pop(){
-        if (tos<0){
+    }
+
+    int pop() {
+        if (tos < 0) {
             System.out.println("Стек  не загржен");
             return 0;
-        }else
+        } else
             return stack[tos--];
-}}
+    }
+}

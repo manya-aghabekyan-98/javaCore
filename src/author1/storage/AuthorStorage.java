@@ -1,4 +1,6 @@
-package author1;
+package author1.storage;
+
+import author1.model.Author;
 
 public class AuthorStorage {
     public Author[] authors = new Author[16];
